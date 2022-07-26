@@ -1,6 +1,6 @@
 - To install all packages, run the "npm i" command at the command line:
 
-![image](https://im.ge/i/npm-i.FhNWZW)
+![image](https://github.com/IvanValovyi/test_task/issues/1#issue-1318391969)
 
  - To add a ".svg" image to the site, add it to the "./images/svg" folder, then run the "gulp svgsprite" command, now you can use the "spite.svg" file to display your image.
 
