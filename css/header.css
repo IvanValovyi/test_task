@@ -1,0 +1,12 @@
+header {
+  padding: 35px;
+}
+header button svg {
+  width: 35px;
+  height: 35px;
+}
+header .logo img {
+  width: 150px;
+}
+
+/*# sourceMappingURL=header.css.map */

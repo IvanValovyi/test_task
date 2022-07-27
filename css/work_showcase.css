@@ -1,0 +1,38 @@
+.work_showcase .title {
+  padding: 50px 0;
+  background: #231f20;
+  color: #ffffff;
+}
+.work_showcase .title span {
+  color: #ffffff9a;
+}
+.work_showcase .showcase_list {
+  width: 100%;
+}
+.work_showcase .container {
+  max-width: none;
+}
+.work_showcase .container .col {
+  margin: 0;
+  padding: 0;
+}
+.work_showcase .container img {
+  width: 100%;
+}
+.work_showcase .load_more {
+  padding: 35px 0;
+}
+.work_showcase .load_more button {
+  background: #cb6f6d;
+  color: white;
+  padding: 5px 35px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.work_showcase .load_more button:hover {
+  background: white;
+  outline: 1px solid #cb6f6d;
+  color: #cb6f6d;
+}
+
+/*# sourceMappingURL=work_showcase.css.map */

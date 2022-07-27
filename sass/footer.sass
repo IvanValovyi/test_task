@@ -1,0 +1,55 @@
+footer
+    .social_media
+        width: 100%
+        border-top: 1px solid rgba(51, 51, 51, 0.1)
+        a
+            flex: 1
+            background: white
+            transition: 0.3s
+            svg
+                width: 50px
+                transition: 0.3s
+                fill: black
+            &:hover
+                background: #ea4c89
+                svg
+                    fill: white
+    .container.info
+        max-width: none
+        .col
+            padding: 35px 10px
+            text-align: center
+            &.contact, &.dribble_shots
+                border-top: 1px solid rgba(51, 51, 51, 0.1)
+            &.dark
+                color: white
+                background: #333
+                min-height: 100%
+            h3.underscore
+                padding-bottom: 7px
+                position: relative
+                &::before
+                    content:''
+                    position: absolute
+                    bottom: 0
+                    left: 15%
+                    width: 70%
+                    height: 1px
+                    background: #afa3a3
+            span.underscore, p.underscore
+                border-bottom: 1px solid #654746
+                cursor: pointer
+            .dribble_shots_list .col
+                    padding: 5px !important
+    .bottom_block
+        background: black
+        padding: 10px 35px
+        color: white
+        nav a
+            color: white
+            margin: 0 5px
+            &::after
+                content: '/'
+                margin-left: 10px
+            &:last-child::after
+                display: none
