@@ -29,7 +29,7 @@ header .logo img {
   color: #ffffff;
 }
 .work_showcase .title span {
-  color: #ffffff9a;
+  color: rgba(255, 255, 255, 0.604);
 }
 .work_showcase .showcase_list {
   width: 100%;
