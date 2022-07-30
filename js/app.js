@@ -1,6 +1,7 @@
 
 import{render}from"./render.js"
 import{all_work_showcase,all_social_media,all_dribble_shots}from"./data.js"
+import{load_more}from"./load_more.js"
 let work_showcase_block=document.querySelector('.showcase_list .row')
 function showcase_item_html(el){return`
         <div class="col">
@@ -20,3 +21,4 @@ render(all_social_media,social_media_block,social_media_item_html)
 let dribble_shots_block=document.querySelector('.dribble_shots_list')
 function dribble_shots_item_html(el){return`<img src='${el.img_src}' class='col m-0 p-0'/>`}
 render(all_dribble_shots,dribble_shots_block,dribble_shots_item_html)
+load_more()
