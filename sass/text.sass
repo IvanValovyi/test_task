@@ -1,0 +1,28 @@
+@function calcFluidFontSize($f-min, $f-max, $w-min:320, $w-max:2500) 
+  $k: ($f-max - $f-min)/($w-max - $w-min)
+  $b: $f-min - $k * $w-min
+
+  $b: $b * 1px
+
+  @return calc( #{$k} * 100vw + #{$b} )
+
+.title
+    h2
+        font-size: calcFluidFontSize(28, 52)
+    span
+        font-size: calcFluidFontSize(14, 26)
+    
+button
+    font-size: calcFluidFontSize(18, 28)
+
+h3.underscore
+    font-size: calcFluidFontSize(20, 38)
+
+p
+    font-size: calcFluidFontSize(15, 20)
+
+footer .bottom_block
+    font-size: calcFluidFontSize(12, 18)
+
+.menu_links a
+    font-size: calcFluidFontSize(18, 24)

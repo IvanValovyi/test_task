@@ -20,6 +20,16 @@ let all_work_showcase = [
     },
 ]
 
+let load_more_list = [
+    {
+        name:'Project 2',
+        img_src:'./images/compressed/work_showcase/2.webp'
+    },{
+        name:'Project 3',
+        img_src:'./images/compressed/work_showcase/3.webp'
+    },
+]
+
 let all_social_media = [
     {
         name:'Facebook',
@@ -68,4 +78,4 @@ let all_dribble_shots = [
     },
 ]
 
-export {all_work_showcase, all_social_media, all_dribble_shots}
+export {all_work_showcase, all_social_media, all_dribble_shots, load_more_list}

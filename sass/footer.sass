@@ -1,19 +1,29 @@
 footer
     .social_media
         width: 100%
-        border-top: 1px solid rgba(51, 51, 51, 0.1)
+        flex-wrap: wrap
         a
             flex: 1
             background: white
             transition: 0.3s
+            padding: 35px 0
             svg
                 width: 50px
+                height: 50px
                 transition: 0.3s
                 fill: black
             &:hover
                 background: #ea4c89
                 svg
                     fill: white
+            @media ( max-width: 700px )
+                min-width: calc( 100% / 3 )
+                padding: 35px 0
+                svg
+                    width: 35px
+                    height: 35px
+            @media ( max-width: 400px )
+                padding: 20px 0
     .container.info
         max-width: none
         .col
@@ -25,8 +35,11 @@ footer
                 color: white
                 background: #333
                 min-height: 100%
+                p
+                    padding: 0 10px
             h3.underscore
                 padding-bottom: 7px
+                margin-bottom: 10px
                 position: relative
                 &::before
                     content:''
@@ -41,6 +54,14 @@ footer
                 cursor: pointer
             .dribble_shots_list .col
                     padding: 5px !important
+            @media ( max-width: 700px )
+                &.contact, &.dark, &.dribble_shots
+                    min-width: 50%
+                    padding: 20px 10px
+            @media ( max-width: 500px )
+                &.contact, &.dark, &.dribble_shots
+                    min-width: 100%
+                
     .bottom_block
         background: black
         padding: 10px 35px
@@ -53,3 +74,13 @@ footer
                 margin-left: 10px
             &:last-child::after
                 display: none
+        @media ( max-width: 700px )
+            flex-direction: column-reverse
+            nav
+                margin-bottom: 10px
+        @media ( max-width: 360px )
+            nav
+                flex-wrap: wrap
+                justify-content: center !important
+                a::after
+                    display: none
