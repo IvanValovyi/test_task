@@ -6,6 +6,21 @@ let work_showcase_block=document.querySelector('.showcase_list .row')
 function showcase_item_html(el){return`
         <div class="col">
             <img src="${el.img_src}" alt="Image">
+            <div class='hover d-flex justify-content-center align-items-center flex-column'>
+                <div class='packaging d-flex justify-content-center align-items-center'>
+                    <svg>
+                        <use href='./sprite.svg#save'></use>
+                    </svg>
+                    <span>Packaging</span> 
+                </div>
+                <span class='item_title'>${el.name}</span>
+                <a href='#' class='d-flex justify-content-center align-items-center'>
+                    <svg>
+                        <use href='./sprite.svg#rocket'></use>
+                    </svg>
+                    <span>LAUNCH PROJECT</span>
+                </a>
+            </div>
         </div>
     `}
 render(all_work_showcase,work_showcase_block,showcase_item_html)
