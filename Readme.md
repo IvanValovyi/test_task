@@ -14,7 +14,7 @@ To install all packages, run the "npm i" command at the command line:
 
  ![image](https://user-images.githubusercontent.com/82437628/181092157-1904c747-8498-49c1-bb65-10bd0513edba.png)
 
-## Adding a ".png, .ipg, .jpeg" image.
+## Adding a ".png, .jpg, .jpeg" image.
 
 To add a new image to the site, you need to add it to the "./images/ordinary" directory, and then run the "gulp compress_images" command in the terminal.
 
