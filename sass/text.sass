@@ -1,3 +1,8 @@
+// Reponssive text feature.
+
+// The first parameter takes the smallest text size, the second - the largest, 
+// the third parameter - the smallest screen width, the fourth - the largest screen width.
+    
 @function calcFluidFontSize($f-min, $f-max, $w-min:320, $w-max:2500) 
   $k: ($f-max - $f-min)/($w-max - $w-min)
   $b: $f-min - $k * $w-min
@@ -5,6 +10,9 @@
   $b: $b * 1px
 
   @return calc( #{$k} * 100vw + #{$b} )
+
+
+// Using
 
 .title
     h2
@@ -26,3 +34,12 @@ footer .bottom_block
 
 .menu_links a
     font-size: calcFluidFontSize(18, 24)
+
+.showcase_list
+    .hover
+        .packaging, a
+            font-size: calcFluidFontSize(16, 22)
+        .item_title
+            font-size: calcFluidFontSize(22, 30)
+            font-weight: 700
+            letter-spacing: 1px

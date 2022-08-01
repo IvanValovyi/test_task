@@ -17,9 +17,24 @@ export function load_more(){
 
         function showcase_item_html(el){
             return `
-                <div class="col">
-                    <img src="${el.img_src}" alt="Image">
+            <div class="col">
+            <img src="${el.img_src}" alt="Image">
+            <div class='hover d-flex justify-content-center align-items-center flex-column'>
+                <div class='packaging'>
+                    <svg>
+                        <use href='./sprite.svg#save'></use>
+                    </svg>
+                    <span>Packaging</span> 
                 </div>
+                <span class='item_title'>${el.name}</span>
+                <a href='#'>
+                    <svg>
+                        <use href='./sprite.svg#rocket'></use>
+                    </svg>
+                    <span>LAUNCH PROJECT</span>
+                </a>
+            </div>
+        </div>
             `
         }
         
